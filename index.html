@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare Glow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+<nav>
+  <div class="nav-links">
+    <h2>SKINCARE</h2>
+    <a href="#">All Products</a>
+    <a href="#">Serum</a>
+    <a href="#">Sunscreen</a>
+    <a href="#">Bundle</a>
+  </div>
+
+  <div class="icons">
+    <!-- Heart Icon -->
+    <a href="#" class="icon" title="Wishlist">
+      <svg width="24" height="24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.9.9-.9-.9a3.8 3.8 0 0 0-5.4 0c-1.5 1.4-1.5 3.7 0 5.2l6.3 6.3 6.3-6.3c1.5-1.4 1.5-3.8 0-5.2z"/>
+      </svg>
+    </a>
+
+    <!-- Profile Icon -->
+    <a href="#" class="icon" title="Profile">
+      <svg width="24" height="24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+    </a>
+
+    <!-- Cart Icon -->
+    <a href="#" class="icon" title="Cart">
+      <svg width="24" height="24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <circle cx="9" cy="21" r="1"/>
+        <circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <p class="animated-text">
+      Transform your skincare routine with premium products that restore, protect, and enhance your natural glow every day.<br>
+      While giving you an invigorating cleansing experience.
+    </p>
+    <button class="btn-shop">Shop Now</button>
+  </section>
+
+  <!-- Top Heading Banner -->
+<div class="top-banner">
+  <h1>Glowww <span class="highlight">Naturalllyy</span></h1>
+</div>
+
+  <div class="skincare-banner">
+  <div class="content">
+    <h1>SKINCARE</h1>
+    <img src="1.png" alt="Overlay Image" class="overlay-img">
+  </div>
+</div>
+<section class="intro-fullscreen">
+  <div class="intro-text">
+    <p>
+      Experience the ultimate in skincare with our expertly formulated products,
+      crafted to nourish, protect, and rejuvenate your skin. Combining the finest
+      natural ingredients with advanced science, our collection ensures every
+      skin type can achieve a radiant, healthy glow. Embrace your beauty with
+      confidence every day. Experience the ultimate in skincare with our 
+      expertly formulated products, crafted to nourish, protect, and rejuvenate
+      your skin.
+    </p>
+  </div>
+</section>
+
+<section class="care-section">
+    <div class="care-text">
+        <h1>YOUR SKIN DESERVES THE BEST CARE.</h1>
+        <p>Discover a curated collection of skincare products designed to rejuvenate, protect, and pamper your skin. Explore our range crafted with love, backed by science, and inspired by nature.</p>
+        <div class="features">
+            <div><h2>01</h2><h3>Bio Ingredients</h3><p>Get naturally beautiful and transform with our bio ingredients creams for healthy, radiant skin.</p></div>
+            <div><h2>02</h2><h3>Everything Natural</h3><p>Pure ingredients for pure skin. The perfect solution for your skincare needs.</p></div>
+            <div><h2>03</h2><h3>All Handmade</h3><p>Made with love and care. Just for you. Give your skin the tender loving care it deserves.</p></div>
+        </div>
+    </div>
+    <div class="care-image">
+        <!-- Image will be added by you -->
+        <img src="2.png" alt="Skincare" />
+    </div>
+</section>
+
+<section class="products-section">
+  <h2>Best Selling Products</h2>
+  <p>Skincare That Brings Out</p>
+
+  <div class="product-slider">
+    <button class="prev">&#10094;</button>
+
+    <div class="slides-wrapper">
+      <div class="slide"><img src="p1.png" alt="Product 1"></div>
+      <div class="slide"><img src="p2.png" alt="Product 2"></div>
+      <div class="slide"><img src="p3.png" alt="Product 3"></div>
+      <div class="slide"><img src="p4.png" alt="Product 4"></div>
+    </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const productsSection = document.querySelector('.products-section');
+    if (productsSection) observer.observe(productsSection);
+  });
+</script>
+
+
+
+<section class="banner-section">
+    <div class="banner-overlay">
+        <h2>Feel Beautiful Inside and Out<br>with Every Product.</h2>
+        <button>Shop Now</button>
+    </div>
+    <img src="3.png" alt="Shop Banner" class="banner-image">
+</section>
+
+<!-- Tags moved outside the banner -->
+<div class="banner-tags">
+    <span>NEW ARRIVAL</span>
+    <span>CLEANSING</span>
+    <span>ACNE FIGHTER</span>
+    <span>ANTI AGING</span>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const banner = document.querySelector('.banner-section');
+    const tags = document.querySelector('.banner-tags');
+
+    if (banner) observer.observe(banner);
+    if (tags) observer.observe(tags);
+  });
+</script>
+
+<section class="all-products">
+  <h2>Explore Our Full Range</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="p1.png" alt="Product 1">
+      <h3>THE BODY LOTION.</h3>
+      <p>₹499</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="p2.png" alt="Product 2">
+      <h3>RITUAL OF SAKURA</h3>
+      <p>₹699</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="p3.png" alt="Product 3">
+      <h3>ALYA SKIN CLEANSER</h3>
+      <p>₹899</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="p4.png" alt="Product 3">
+      <h3>THE BODY LOTION</h3>
+      <p>₹999</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more product cards here -->
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    // Observe the section
+    const productSection = document.querySelector('.all-products');
+    if (productSection) observer.observe(productSection);
+
+    // Observe each product card
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => observer.observe(card));
+  });
+</script>
+
+
+<section class="faq-section">
+  <div class="faq-image">
+    <img src="1.png" alt="FAQ" />
+    <button class="support-btn">24/7 Support</button>
+  </div>
+  <div class="faq-content">
+    <h2>Frequently Asked Questions</h2>
+    <p>Answers to Your Skincare Questions, All in One Place.</p>
+    <ul>
+      <li>Are your products safe for sensitive skin?</li>
+      <li>
+        Are your products cruelty-free?<br />
+        <em>Absolutely! All our products are cruelty-free, and most are vegan. Check individual product details for specifics.</em>
+      </li>
+      <li>What’s your return policy?</li>
+      <li>Do you ship internationally?</li>
+      <li>How do I choose the right product?</li>
+    </ul>
+  </div>
+</section>
+<script>
+  const faqElements = document.querySelectorAll('.faq-image, .faq-content');
+
+  const faqObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('faq-visible');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  faqElements.forEach(el => faqObserver.observe(el));
+</script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h2>Join The Skincare Community Now.</h2>
+    <p class="contact">Get in Touch: <a href="mailto:contact@skincare.com">contact@skincare.com</a></p>
+    
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <span>|</span>
+      <a href="#">Instagram</a>
+      <span>|</span>
+      <a href="#">YouTube</a>
+    </div>
+    
+    <div class="policy-links">
+      <a href="#">Terms of Service</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Cookies Policy</a>
+    </div>
+  </div>
+  <h1 class="footer-brand">SKINCARE</h1>
+</footer>
+<script>
+  const footer = document.querySelector('.footer');
+
+  const footerObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        footer.classList.add('footer-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  if (footer) {
+    footerObserver.observe(footer);
+  }
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    gsap.from(".hero h1", { y: 50, opacity: 0, duration: 1, ease: "power2.out" });
+    gsap.from(".animated-text", { opacity: 0, y: 30, duration: 1.2, delay: 0.5 });
+    gsap.from(".btn-shop", { scale: 0.8, opacity: 0, delay: 1.2, duration: 0.6, ease: "back.out(1.7)" });
+  </script>
+
+  <script>
+  const slidesWrapper = document.querySelector('.slides-wrapper');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const slideWidth = slides[0].offsetWidth;
+    slidesWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      showSlide(currentIndex);
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      showSlide(currentIndex);
+    }
+  });
+</script>
+<script>
+  const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    }
+  });
+}, { threshold: 0.3 });
+
+observer.observe(document.querySelector('.intro-text'));
+
+
+  observer.observe(introSection);
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const careText = document.querySelector('.care-text');
+    const careImage = document.querySelector('.care-image');
+
+    if (careText) observer.observe(careText);
+    if (careImage) observer.observe(careImage);
+  });
+</script>
+
+
+
+</body>
+</html>
